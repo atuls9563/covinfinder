@@ -1,1 +1,118 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'node_modules/angular2-toaster/toaster';
+
+.font-12{
+    font-size: 12px;
+}
+.search-headers {
+    display: flex;
+    justify-content: center;
+}
+input.form-control {
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #ffff !important;
+    border: none !important;
+    border-bottom: solid 1px #fff !important;
+    box-shadow: none !important;
+}
+
+input.form-control::-webkit-input-placeholder { /* Edge */
+    color: #ffff;
+  }
+  
+  
+input.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffff;
+  }
+  
+  
+input.form-control::placeholder {
+    color: #ffff;
+  }
+
+.search-headers label.btn {
+    /* background: transparent !important; */
+    border: none;
+    padding: 7px 20px 7px 20px !important;
+    background: transparent !important;
+    border-bottom: solid 2px;
+    box-shadow:none !important;
+    border-radius:0 !important;
+    border-color: transparent !important;
+}
+
+.search-headers label.btn.active {
+    border-color:#055967 !important;
+} 
+
+
+.font-14{
+    font-size: 14px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.font-17{
+    font-size: 17px;
+}
+
+.font-w-400{
+    font-weight: 400;
+}
+.search-result {
+   
+    max-width: 94%;
+    margin: 0 auto;
+    margin-top: -50px;
+    border: solid 1px #ddd;
+    border-radius: 6px;
+   
+}
+.requests_table {
+    max-height: 300px;
+    overflow-y: auto;
+}
+.loader {
+    display:inline-block;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.requests_table .table{white-space:nowrap;}
+.requests_table .table-responsive{margin-bottom:15px;}
+.requests_table .table thead th{border:none;text-align:left;color:#777777;font-weight:700;vertical-align:middle}
+.requests_table .table tbody td{color:#777777;border:none;}
+.requests_table .table tbody td .orderid{color:#007496;}
+.requests_table .table tbody tr:nth-child(odd) td{background:#f8f8f8}
+.requests_table .table strong{display:block;color:#007496;font-weight:700;}
+.table{width: 100%;max-width: 100%;margin-bottom: 1rem;background-color: transparent;border-spacing:0;}
+.table td, .table th {padding: .75rem;vertical-align: top;border-top: 1px solid #dee2e6;text-align:left;}
+.table td{color:#777777; font-weight: 300;}
+
+@media screen and (max-width: 991px){
+.requests_table .table thead {border: none;clip: rect(0 0 0 0);height: 1px; margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+.requests_table .table tr{padding:5px 0;display:block;}
+.requests_table .table td{border: none;display: block;font-size: .8em;text-align: right;clear: both;padding:8px 15px}
+.requests_table .table td::before {width: 42%;content: attr(data-label);float: left;font-weight: 700;color: #007496;text-align: left;}
+.requests_table .table td::after{content: '';display: block;clear: both;height: 0;}
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
